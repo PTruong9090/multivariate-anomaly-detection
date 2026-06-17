@@ -55,3 +55,5 @@ latex-source/
 results/
 diagrams/
 blog_prompt.md
+
+.env

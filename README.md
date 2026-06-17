@@ -1,4 +1,6 @@
-# Striim AI Prototype: TranAD Multivariate Anomaly Detection
+# Homelab Prometheus Multivariate Anomaly Detection
+
+Forked from Striim Labs' TranAD Multivariate Anomaly Detection prototype and adapted to real Prometheus telemetry from a self-hosted media server.
 
 This repository contains a Striim AI Prototype for real-time multivariate time-series anomaly detection using [TranAD](https://arxiv.org/abs/2201.07284) (Tuli et al., VLDB 2022) with per-feature root cause attribution.
 
