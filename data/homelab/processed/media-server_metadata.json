@@ -1,0 +1,13 @@
+{
+  "machine_name":"media-server",
+  "n_train_rows":2823,
+  "n_test_rows":1210,
+  "n_features":4,
+  "features":[
+    "media_cpu_percent",
+    "media_memory_percent",
+    "media_network_receive_bytes",
+    "media_network_transmit_bytes"
+  ],
+  "source_csv":"data\\prometheus\\raw\\metrics.csv"
+}

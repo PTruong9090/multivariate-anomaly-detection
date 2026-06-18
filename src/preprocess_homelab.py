@@ -71,6 +71,10 @@ def preprocess_homelab(
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
+    df = pd.read_csv(csv_path)
+    df['timestamp'] = pd.to_datetime(df['timestamp'], utc=True)
+    df = df.sort_values('timestamp')
+
     df = df[['timestamp'] + FEATURE_COLUMNS].copy()
     
     df = df.replace([np.inf, -np.inf], np.nan)
@@ -114,4 +118,5 @@ def preprocess_homelab(
 
 
 if __name__ == "__main__":
+    print('starting')
     preprocess_homelab()
