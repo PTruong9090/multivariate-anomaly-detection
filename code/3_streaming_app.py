@@ -50,8 +50,8 @@ logger = logging.getLogger(__name__)
 
 # -- Global state --
 
-MODEL_DIR = os.getenv("MODEL_PATH", str(PROJECT_ROOT / "models" / "tranad"))
-DATA_DIR = os.getenv("DATA_DIR", str(PROJECT_ROOT / "data" / "smd" / "processed"))
+MODEL_DIR = os.getenv("MODEL_PATH", str(PROJECT_ROOT / "models" / "tranad" / "initial"))
+DATA_DIR = os.getenv("DATA_DIR", str(PROJECT_ROOT / "data" / "homelab" / "processed"))
 DEVICE = os.getenv("DEVICE", "cpu")
 PRELOAD_MACHINES = os.getenv("PRELOAD_MACHINES", "")
 
@@ -199,9 +199,14 @@ async def config():
 
 @app.post("/score", response_model=ScoringResponse)
 async def score(request: ScoringRequest):
-    store_id = request.store_id
-    device_id = request.device_id
-    machine_key_str = _machine_key(store_id, device_id)
+    if request.machine:
+        machine_key_str = request.machine
+        store_id = request.store_id if request.store_id is not None else 0
+        device_id = request.device_id if request.device_id is not None else 0
+    else:
+        store_id = request.store_id
+        device_id = request.device_id
+        machine_key_str = _machine_key(store_id, device_id)
     t_start = time.monotonic()
 
     try:
@@ -302,6 +307,7 @@ async def score(request: ScoringRequest):
     )
 
     return ScoringResponse(
+        machine=machine_key_str,
         store_id=store_id,
         device_id=device_id,
         timestamp=request.timestamp,

@@ -100,13 +100,13 @@ class ScoringRequest(BaseModel):
         examples=["media-server"]
     )
     store_id: int = Field(
-        ...,
+        default=None,
         description="Store identifier",
         examples=[1],
         ge=1,
     )
     device_id: int = Field(
-        ...,
+        default=None,
         description="Device identifier within the store",
         examples=[1],
         ge=1,
@@ -187,6 +187,7 @@ class ScoringRequest(BaseModel):
 class ScoringResponse(BaseModel):
     """Response body for POST /score."""
 
+    machine: str | None = None
     store_id: int = Field(..., description="Echo of the requested store_id")
     device_id: int = Field(..., description="Echo of the requested device_id")
     timestamp: str | None = Field(
