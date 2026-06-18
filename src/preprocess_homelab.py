@@ -78,7 +78,7 @@ def preprocess_homelab(
     df = df[['timestamp'] + FEATURE_COLUMNS].copy()
     
     df = df.replace([np.inf, -np.inf], np.nan)
-    df[FEATURE_COLUMNS] = df[FEATURE_COLUMNS].interpolate(limit_directions='both')
+    df[FEATURE_COLUMNS] = df[FEATURE_COLUMNS].interpolate(limit_direction='both')
     df = df.dropna()
 
     # Split into train/test
@@ -118,5 +118,4 @@ def preprocess_homelab(
 
 
 if __name__ == "__main__":
-    print('starting')
     preprocess_homelab()

@@ -5,7 +5,7 @@ All models use Pydantic v2 (BaseModel). FastAPI auto-generates
 OpenAPI/JSON schemas from these definitions at /docs.
 """
 
-from pydantic import BaseModel, Field, field_validator
+from pydantic import BaseModel, Field, field_validator, model_validator
 
 
 # -- Nested response types --
@@ -94,6 +94,11 @@ class ScoringRequest(BaseModel):
     Minimum 10 timesteps (model window_size) required.
     """
 
+    machine: str | None = Field(
+        default=None,
+        description="Machine identifier. If provided, this overrides store_id/device_id",
+        examples=["media-server"]
+    )
     store_id: int = Field(
         ...,
         description="Store identifier",
@@ -134,7 +139,15 @@ class ScoringRequest(BaseModel):
         default="phase2_only",
         description="Scoring mode: 'phase2_only' (reference) or 'averaged' (paper Eq. 13)",
     )
-
+    @model_validator(mode="after")
+    def validate_machine_or_store_device(self):
+        if self.machine is None and (self.store_id is None or self.device_id is None):
+            raise ValueError(
+                "Provide either machine='media-server' or both store_id and device_id."
+            )
+        
+        return self
+    
     @field_validator("data")
     @classmethod
     def validate_minimum_timesteps(cls, v):
