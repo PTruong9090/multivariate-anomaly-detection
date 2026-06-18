@@ -1,7 +1,7 @@
 {
   "machine": "media-server",
-  "timestamp": "demo-normal",
-  "filename": "normal_prometheus_like_sample",
+  "timestamp": "demo-anomaly",
+  "filename": "prometheus_like_with_spike",
   "include_attribution": true,
   "include_per_timestep": true,
   "scoring_mode": "phase2_only",
@@ -11,9 +11,9 @@
     [0.87, 19.61, 46.47, 1082.30],
     [0.93, 17.60, 46.47, 1082.42],
     [1.05, 18.20, 46.50, 1082.75],
-    [0.96, 18.75, 46.52, 1082.90],
-    [0.91, 18.40, 46.49, 1082.61],
-    [0.89, 18.95, 46.48, 1082.55],
+    [14.50, 21.80, 58.20, 1002.00],
+    [16.20, 22.10, 60.50, 998.00],
+    [15.80, 21.95, 61.00, 995.50],
     [1.02, 19.10, 46.53, 1082.80],
     [0.94, 18.35, 46.50, 1082.70]
   ]
