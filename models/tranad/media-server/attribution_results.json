@@ -1,0 +1,126 @@
+{
+  "raw_segments": [
+    {
+      "segment_start": 545,
+      "segment_end": 568,
+      "segment_length": 24,
+      "peak_score": 1.06993,
+      "peak_timestamp": 545,
+      "mean_score": 0.66775,
+      "attributed_dimensions": [
+        {
+          "dim": 1,
+          "label": "dim_1",
+          "mean_elevation": 51.0692,
+          "contribution": 0.9998
+        }
+      ]
+    },
+    {
+      "segment_start": 848,
+      "segment_end": 865,
+      "segment_length": 18,
+      "peak_score": 2647.174561,
+      "peak_timestamp": 849,
+      "mean_score": 2617.057861,
+      "attributed_dimensions": [
+        {
+          "dim": 3,
+          "label": "dim_3",
+          "mean_elevation": 15777474.0,
+          "contribution": 0.9346
+        }
+      ]
+    },
+    {
+      "segment_start": 868,
+      "segment_end": 868,
+      "segment_length": 1,
+      "peak_score": 0.760443,
+      "peak_timestamp": 868,
+      "mean_score": 0.760443,
+      "attributed_dimensions": [
+        {
+          "dim": 2,
+          "label": "dim_2",
+          "mean_elevation": 2616.2656,
+          "contribution": 0.3345
+        },
+        {
+          "dim": 0,
+          "label": "dim_0",
+          "mean_elevation": 2418.3611,
+          "contribution": 0.3286
+        },
+        {
+          "dim": 3,
+          "label": "dim_3",
+          "mean_elevation": 1485.8282,
+          "contribution": 0.3081
+        }
+      ]
+    }
+  ],
+  "adjusted_segments": [
+    {
+      "segment_start": 544,
+      "segment_end": 568,
+      "segment_length": 25,
+      "peak_score": 1.06993,
+      "peak_timestamp": 545,
+      "mean_score": 0.641051,
+      "attributed_dimensions": [
+        {
+          "dim": 1,
+          "label": "dim_1",
+          "mean_elevation": 49.0269,
+          "contribution": 0.9998
+        }
+      ]
+    },
+    {
+      "segment_start": 847,
+      "segment_end": 865,
+      "segment_length": 19,
+      "peak_score": 2647.174561,
+      "peak_timestamp": 849,
+      "mean_score": 2479.318115,
+      "attributed_dimensions": [
+        {
+          "dim": 3,
+          "label": "dim_3",
+          "mean_elevation": 14947080.0,
+          "contribution": 0.9346
+        }
+      ]
+    },
+    {
+      "segment_start": 868,
+      "segment_end": 868,
+      "segment_length": 1,
+      "peak_score": 0.760443,
+      "peak_timestamp": 868,
+      "mean_score": 0.760443,
+      "attributed_dimensions": [
+        {
+          "dim": 2,
+          "label": "dim_2",
+          "mean_elevation": 2616.2656,
+          "contribution": 0.3345
+        },
+        {
+          "dim": 0,
+          "label": "dim_0",
+          "mean_elevation": 2418.3611,
+          "contribution": 0.3286
+        },
+        {
+          "dim": 3,
+          "label": "dim_3",
+          "mean_elevation": 1485.8282,
+          "contribution": 0.3081
+        }
+      ]
+    }
+  ]
+}
