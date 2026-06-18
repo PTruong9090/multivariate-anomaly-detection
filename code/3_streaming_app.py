@@ -50,7 +50,7 @@ logger = logging.getLogger(__name__)
 
 # -- Global state --
 
-MODEL_DIR = os.getenv("MODEL_PATH", str(PROJECT_ROOT / "models" / "tranad" / "initial"))
+MODEL_DIR = os.getenv("MODEL_PATH", str(PROJECT_ROOT / "models" / "tranad"))
 DATA_DIR = os.getenv("DATA_DIR", str(PROJECT_ROOT / "data" / "homelab" / "processed"))
 DEVICE = os.getenv("DEVICE", "cpu")
 PRELOAD_MACHINES = os.getenv("PRELOAD_MACHINES", "")
