@@ -27,8 +27,8 @@ class TranADConfig:
 
     # Architecture
     window_size: int = 10
-    n_features: int = 38
-    n_heads: int = 38
+    n_features: int = 4
+    n_heads: int = 4
     n_encoder_layers: int = 1
     n_decoder_layers: int = 1
     d_model: int = 0  # Auto-set to n_features * 2 if 0
