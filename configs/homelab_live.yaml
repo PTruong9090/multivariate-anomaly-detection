@@ -1,0 +1,23 @@
+machine: media-server
+
+prometheus_url: http://media-server:9090
+score_url: "http://localhost:8000/score"
+
+step_seconds: 300
+window_size: 10
+poll_seconds: 60
+
+model_version: "tranad-homelab-v1"
+
+features:
+  - name: media_cpu_percent
+    query: '100 - (avg(rate(node_cpu_seconds_total{job="node",mode="idle"}[5m])) * 100)'
+
+  - name: media_memory_percent
+    query: '(1 - (node_memory_MemAvailable_bytes{job="node"} / node_memory_MemTotal_bytes{job="node"})) * 100'
+
+  - name: media_network_receive_bytes
+    query: 'rate(node_network_receive_bytes_total{job="node",device="eth0"}[5m])'
+
+  - name: media_network_transmit_bytes
+    query: 'rate(node_network_transmit_bytes_total{job="node",device="eth0"}[5m])'
