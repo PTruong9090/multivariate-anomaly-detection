@@ -12,6 +12,8 @@ Usage:
     uv run python code/1_train_model.py --machine machine-1-1
     uv run python code/1_train_model.py --machine machine-1-1 --epochs 10
     uv run python code/1_train_model.py --all
+
+    uv run py .\code\1_train_model.py --machine media-server --data-dir .\data\homelab\processed --output-dir .\models\tranad\
 """
 
 import argparse

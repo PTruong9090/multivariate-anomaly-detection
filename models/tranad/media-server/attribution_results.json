@@ -4,31 +4,69 @@
       "segment_start": 545,
       "segment_end": 568,
       "segment_length": 24,
-      "peak_score": 1.06993,
-      "peak_timestamp": 545,
-      "mean_score": 0.66775,
+      "peak_score": 6.115906,
+      "peak_timestamp": 561,
+      "mean_score": 5.961413,
       "attributed_dimensions": [
         {
           "dim": 1,
           "label": "dim_1",
-          "mean_elevation": 51.0692,
-          "contribution": 0.9998
+          "mean_elevation": 310.9349,
+          "contribution": 0.9913
+        }
+      ]
+    },
+    {
+      "segment_start": 599,
+      "segment_end": 601,
+      "segment_length": 3,
+      "peak_score": 12.389924,
+      "peak_timestamp": 600,
+      "mean_score": 7.38711,
+      "attributed_dimensions": [
+        {
+          "dim": 0,
+          "label": "dim_0",
+          "mean_elevation": 18825.8379,
+          "contribution": 0.9645
+        }
+      ]
+    },
+    {
+      "segment_start": 611,
+      "segment_end": 612,
+      "segment_length": 2,
+      "peak_score": 6.309514,
+      "peak_timestamp": 611,
+      "mean_score": 4.205328,
+      "attributed_dimensions": [
+        {
+          "dim": 0,
+          "label": "dim_0",
+          "mean_elevation": 10261.0879,
+          "contribution": 0.9276
         }
       ]
     },
     {
       "segment_start": 848,
-      "segment_end": 865,
-      "segment_length": 18,
-      "peak_score": 2647.174561,
-      "peak_timestamp": 849,
-      "mean_score": 2617.057861,
+      "segment_end": 866,
+      "segment_length": 19,
+      "peak_score": 1732898.5,
+      "peak_timestamp": 865,
+      "mean_score": 1633289.75,
       "attributed_dimensions": [
+        {
+          "dim": 2,
+          "label": "dim_2",
+          "mean_elevation": 184148176.0,
+          "contribution": 0.4204
+        },
         {
           "dim": 3,
           "label": "dim_3",
-          "mean_elevation": 15777474.0,
-          "contribution": 0.9346
+          "mean_elevation": 48113004.0,
+          "contribution": 0.5796
         }
       ]
     },
@@ -36,27 +74,71 @@
       "segment_start": 868,
       "segment_end": 868,
       "segment_length": 1,
-      "peak_score": 0.760443,
+      "peak_score": 0.273119,
       "peak_timestamp": 868,
-      "mean_score": 0.760443,
+      "mean_score": 0.273119,
       "attributed_dimensions": [
         {
-          "dim": 2,
-          "label": "dim_2",
-          "mean_elevation": 2616.2656,
-          "contribution": 0.3345
+          "dim": 3,
+          "label": "dim_3",
+          "mean_elevation": 8.3341,
+          "contribution": 0.6164
         },
         {
           "dim": 0,
           "label": "dim_0",
-          "mean_elevation": 2418.3611,
-          "contribution": 0.3286
+          "mean_elevation": 6.5784,
+          "contribution": 0.009
         },
+        {
+          "dim": 1,
+          "label": "dim_1",
+          "mean_elevation": 5.63,
+          "contribution": 0.3746
+        }
+      ]
+    },
+    {
+      "segment_start": 870,
+      "segment_end": 870,
+      "segment_length": 1,
+      "peak_score": 0.188171,
+      "peak_timestamp": 870,
+      "mean_score": 0.188171,
+      "attributed_dimensions": [
         {
           "dim": 3,
           "label": "dim_3",
-          "mean_elevation": 1485.8282,
-          "contribution": 0.3081
+          "mean_elevation": 5.1459,
+          "contribution": 0.5459
+        },
+        {
+          "dim": 1,
+          "label": "dim_1",
+          "mean_elevation": 4.5826,
+          "contribution": 0.4541
+        }
+      ]
+    },
+    {
+      "segment_start": 872,
+      "segment_end": 874,
+      "segment_length": 3,
+      "peak_score": 0.187123,
+      "peak_timestamp": 872,
+      "mean_score": 0.185562,
+      "attributed_dimensions": [
+        {
+          "dim": 3,
+          "label": "dim_3",
+          "mean_elevation": 5.7703,
+          "contribution": 0.64
+        },
+        {
+          "dim": 1,
+          "label": "dim_1",
+          "mean_elevation": 3.7714,
+          "contribution": 0.3579
         }
       ]
     }
@@ -66,31 +148,69 @@
       "segment_start": 544,
       "segment_end": 568,
       "segment_length": 25,
-      "peak_score": 1.06993,
-      "peak_timestamp": 545,
-      "mean_score": 0.641051,
+      "peak_score": 6.115906,
+      "peak_timestamp": 561,
+      "mean_score": 5.723059,
       "attributed_dimensions": [
         {
           "dim": 1,
           "label": "dim_1",
-          "mean_elevation": 49.0269,
-          "contribution": 0.9998
+          "mean_elevation": 298.502,
+          "contribution": 0.9913
+        }
+      ]
+    },
+    {
+      "segment_start": 599,
+      "segment_end": 601,
+      "segment_length": 3,
+      "peak_score": 12.389924,
+      "peak_timestamp": 600,
+      "mean_score": 7.38711,
+      "attributed_dimensions": [
+        {
+          "dim": 0,
+          "label": "dim_0",
+          "mean_elevation": 18825.8379,
+          "contribution": 0.9645
+        }
+      ]
+    },
+    {
+      "segment_start": 611,
+      "segment_end": 612,
+      "segment_length": 2,
+      "peak_score": 6.309514,
+      "peak_timestamp": 611,
+      "mean_score": 4.205328,
+      "attributed_dimensions": [
+        {
+          "dim": 0,
+          "label": "dim_0",
+          "mean_elevation": 10261.0879,
+          "contribution": 0.9276
         }
       ]
     },
     {
       "segment_start": 847,
-      "segment_end": 865,
-      "segment_length": 19,
-      "peak_score": 2647.174561,
-      "peak_timestamp": 849,
-      "mean_score": 2479.318115,
+      "segment_end": 866,
+      "segment_length": 20,
+      "peak_score": 1732898.5,
+      "peak_timestamp": 865,
+      "mean_score": 1551625.25,
       "attributed_dimensions": [
+        {
+          "dim": 2,
+          "label": "dim_2",
+          "mean_elevation": 174940768.0,
+          "contribution": 0.4204
+        },
         {
           "dim": 3,
           "label": "dim_3",
-          "mean_elevation": 14947080.0,
-          "contribution": 0.9346
+          "mean_elevation": 45707352.0,
+          "contribution": 0.5796
         }
       ]
     },
@@ -98,27 +218,71 @@
       "segment_start": 868,
       "segment_end": 868,
       "segment_length": 1,
-      "peak_score": 0.760443,
+      "peak_score": 0.273119,
       "peak_timestamp": 868,
-      "mean_score": 0.760443,
+      "mean_score": 0.273119,
       "attributed_dimensions": [
         {
-          "dim": 2,
-          "label": "dim_2",
-          "mean_elevation": 2616.2656,
-          "contribution": 0.3345
+          "dim": 3,
+          "label": "dim_3",
+          "mean_elevation": 8.3341,
+          "contribution": 0.6164
         },
         {
           "dim": 0,
           "label": "dim_0",
-          "mean_elevation": 2418.3611,
-          "contribution": 0.3286
+          "mean_elevation": 6.5784,
+          "contribution": 0.009
         },
+        {
+          "dim": 1,
+          "label": "dim_1",
+          "mean_elevation": 5.63,
+          "contribution": 0.3746
+        }
+      ]
+    },
+    {
+      "segment_start": 870,
+      "segment_end": 870,
+      "segment_length": 1,
+      "peak_score": 0.188171,
+      "peak_timestamp": 870,
+      "mean_score": 0.188171,
+      "attributed_dimensions": [
         {
           "dim": 3,
           "label": "dim_3",
-          "mean_elevation": 1485.8282,
-          "contribution": 0.3081
+          "mean_elevation": 5.1459,
+          "contribution": 0.5459
+        },
+        {
+          "dim": 1,
+          "label": "dim_1",
+          "mean_elevation": 4.5826,
+          "contribution": 0.4541
+        }
+      ]
+    },
+    {
+      "segment_start": 872,
+      "segment_end": 874,
+      "segment_length": 3,
+      "peak_score": 0.187123,
+      "peak_timestamp": 872,
+      "mean_score": 0.185562,
+      "attributed_dimensions": [
+        {
+          "dim": 3,
+          "label": "dim_3",
+          "mean_elevation": 5.7703,
+          "contribution": 0.64
+        },
+        {
+          "dim": 1,
+          "label": "dim_1",
+          "mean_elevation": 3.7714,
+          "contribution": 0.3579
         }
       ]
     }

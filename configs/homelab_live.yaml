@@ -1,4 +1,4 @@
-machine: media-server
+machine: "media-server"
 
 prometheus_url: http://media-server:9090
 score_url: "http://localhost:8000/score"
@@ -6,6 +6,8 @@ score_url: "http://localhost:8000/score"
 step_seconds: 300
 window_size: 10
 poll_seconds: 60
+lookback_minutes: 120
+scoring_mode: "phase2_only"
 
 model_version: "tranad-homelab-v1"
 
