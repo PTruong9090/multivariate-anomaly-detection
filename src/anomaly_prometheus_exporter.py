@@ -149,9 +149,15 @@ def main():
     )
 
     parser.add_argument(
-        "metrics-port",
+        "--metrics-port",
         default=9108,
         help="Port for Prometheus /metrics endpoint"
+    )
+
+    parser.add_argument(
+        "--listen-addr",
+        default="0.0.0.0",
+        help="Address to bind exporter server"
     )
 
     parser.add_argument(
@@ -183,7 +189,7 @@ def main():
     machine = config.get("machine", "media-server")
     interval = args.interval or int(config.get("interval_seconds", 300))
 
-    start_http_server(args.metric_port, addr=args.listen_addr)
+    start_http_server(args.metrics_port, addr=args.listen_addr)
 
     print("=" * 60)
     print("TranAD Prometheus exporter started")
