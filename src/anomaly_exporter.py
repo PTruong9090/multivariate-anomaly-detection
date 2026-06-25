@@ -149,7 +149,7 @@ def build_latest_window(config, df):
 
     complete_df = df.dropna(subset=features_col)
 
-    if len(complete_df) < 10:
+    if len(complete_df) < window_size:
         raise RuntimeError(f"Need at least 10 complete rows, only found {len(complete_df)}")
     
     window_df = complete_df.tail(window_size)
@@ -224,10 +224,16 @@ def print_score_summary(res):
     print("=" * 60)
 
 
-def run_once(config):
+def run_pipeline(config):
     df = query_recent_metrics(config)
     window_df, window = build_latest_window(config, df)
     res = score_window(config, window_df, window)
+
+    return window_df, res
+
+
+def run_once(config):
+    window_df, res = run_pipeline(config)
     print_score_summary(res)
 
     return res
