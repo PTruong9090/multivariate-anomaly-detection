@@ -92,7 +92,10 @@ multivariate-anomaly-detection/
 │   └── model_design.ipynb                 # Architecture walkthrough, scoring, attribution
 │
 ├── src/                                   # Reusable library code
+|   ├── anomaly_exporter.py                # Query metrics, build window, and score
+|   ├── anomaly_prometheus_exporter.py     # Export score metric to Prometheus
 │   ├── model.py                           # TranADConfig, TranADNet, transformer layers
+|   ├── preprocess_homelab.py              # Process raw data into numpy files
 │   ├── train.py                           # Shared training loop (used by 1_ and 4_)
 │   ├── scorer.py                          # Scoring, POT thresholding, attribution
 │   ├── preprocess.py                      # Data download, normalization, loading
